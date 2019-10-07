@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel='icon' href="/img/icon-sunny.png">
+    </head>
+
+    
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            {{>titleMenu}}
+
+            {{>titleHead}}
+
+            <form>
+                <input placeholder="Your location">
+                <button>Search</button>
+            </form>
+            <p id="errorIcon"></p>
+            <p id="errorMessage"></p>
+            <p id="placeName"></p>
+            <p id="latitude"></p>
+            <p id="longitude"></p>
+            <p id="dailySummary"></p>
+            <p id="currentSummary"></p>
+            <p id="rain"></p>
+            <p id="temperature"></p>
+            <p id="wind"></p>
+        </div>
+        
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+
+    </body>
+    
+</html>
